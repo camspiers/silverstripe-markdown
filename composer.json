@@ -1,0 +1,7 @@
+{
+    "name": "camspiers/markdown",
+    "type": "silverstripe-module",
+    "require": {
+        "dflydev/markdown": "1.0.2"
+    }
+}
