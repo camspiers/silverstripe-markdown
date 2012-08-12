@@ -9,5 +9,16 @@ class MarkdownField extends TextareaField
             $dataObject->$fieldName->setMarkdown($this->Value());
         }
     }
+    
+    function setValue($val) {
+
+        if(is_array($val)) {
+            $this->value = $val['Markdown'];
+        } elseif($val instanceof Markdown) {
+            $this->value = $val->getMarkdown();
+        }
+
+        return $this;
+    }
 
 }
