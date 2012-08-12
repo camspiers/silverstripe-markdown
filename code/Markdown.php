@@ -49,8 +49,8 @@ class Markdown extends DBField implements CompositeDBField
     
     function addToQuery(&$query) {
         parent::addToQuery($query);
-        $query->selectField(sprintf('"%Markdown"', $this->name));
-        $query->selectField(sprintf('"%MarkdownCompiled"', $this->name));
+        $query->selectField(sprintf('"%sMarkdown"', $this->name));
+        $query->selectField(sprintf('"%sMarkdownCompiled"', $this->name));
     }
 
     public function setMarkdown($markdown, $markChanged = true) {
