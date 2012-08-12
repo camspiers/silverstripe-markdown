@@ -16,6 +16,8 @@ class MarkdownField extends TextareaField
             $this->value = $val['Markdown'];
         } elseif($val instanceof Markdown) {
             $this->value = $val->getMarkdown();
+        } else {
+            $this->value = $val;
         }
 
         return $this;
