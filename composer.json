@@ -2,7 +2,6 @@
     "name": "camspiers/markdown",
     "type": "silverstripe-module",
     "require": {
-        "composer/installers": "dev-master",
         "dflydev/markdown": "1.0.2"
     },
     "minimum-stability": "dev"
